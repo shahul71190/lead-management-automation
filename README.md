@@ -25,14 +25,15 @@ This workflow automatically captures website inquiries, stores lead information 
 
 ## ⚙️ Workflow Architecture
 
-Website Form (Lovable)
-→ n8n Webhook
-→ Google Sheets (Append Lead)
-→ Gmail (Send Email)
+Website Form (Lovable)  
+→ n8n Webhook  
+→ Google Sheets (Append Lead)  
+→ Gmail (Send Email)  
 → Google Sheets (Update Status)
 
 **Email failure handling:**
-Gmail Error Output
+
+Gmail Error Output  
 → Google Sheets (Update Status to Failed)
 
 ## 🔧 Technologies Used
@@ -67,7 +68,7 @@ Gmail Error Output
 | Message | Inquiry details |
 | Submission Date | Lead submission timestamp |
 | Email Status | Pending / Sent / Failed |
-| Email Sent Time | Email delivery timestamp |
+| Email Sent Time | Email sent timestamp |
 
 ## 🧪 Testing
 
@@ -78,21 +79,6 @@ The workflow was tested for:
 - Successful `Sent` status update.
 - Failed email handling and `Failed` status update.
 - Production webhook submission.
-
-## 📁 Repository Structure
-
-```text
-workflow/
-  lead-management-automation.json
-
-screenshots/
-  01-website.png
-  02-n8n-workflow.png
-  03-google-sheets-leads.png
-  04-email-sent.png
-  05-email-failed.png
-  06-gmail-received.png
-```
 
 ## 👨‍💻 About This Project
 
